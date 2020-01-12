@@ -1,3 +1,71 @@
 body {
-  background: #444;
-  color: #fff; }
+  margin: 0px;
+  background: #0F1626;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif; }
+
+.styled-font {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace !important; }
+
+.nav-wrapper {
+  height: 68px !important;
+  line-height: 68px !important; }
+
+.sidenav-trigger i {
+  line-height: 68px !important; }
+
+.nav-bar {
+  background-color: #0F1626;
+  overflow: hidden;
+  box-shadow: 0px -63px 12px 70px #090b1d; }
+
+.nav-bar-text {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 0px 10px 0px; }
+  .nav-bar-text:hover {
+    background-color: inherit;
+    color: #d2a02a; }
+
+.nav-bar-no {
+  float: left;
+  display: block;
+  cursor: default;
+  color: #d2a02a;
+  font-size: 14px;
+  padding-right: 17px; }
+
+.center-text {
+  margin: auto; }
+
+.btn-small {
+  text-transform: none;
+  background-color: inherit;
+  border: 1px solid;
+  border-color: #d2a02a; }
+  .btn-small:hover {
+    background-color: inherit;
+    color: #d2a02a; }
+
+.sidenav-trigger {
+  float: right !important; }
+
+.logo-img {
+  height: 48px;
+  width: 39.2px;
+  margin: 0px 15px 0px; }
+
+.hello {
+  color: #d2a02a;
+  font-size: 20px; }
+
+.name {
+  color: #FFFFFF;
+  font-size: 70px;
+  font-weight: bolder; }
+
+.passion {
+  color: #899FC1;
+  font-size: 40px;
+  font-weight: bold; }

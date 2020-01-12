@@ -1,6 +1,98 @@
-$primary-color: #444;
+$background-primary: #0F1626; //rgb(7,18,38)
+$text-important: #d2a02a; //rgb(210, 160, 42)
+$text-primary: #FFFFFF; //rgb(194,231,218)
+$text-secondary: #899FC1; //rgb(137,159,193)
+
+//$text-secondary: #D03137; //rgb(208,49,55)
+//$background-secondary: #0c1a36; //rgb(11,24,51)
+
 
 body {
-    background: $primary-color;
-    color: #fff;
+    margin: 0px;
+    background: $background-primary;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+.styled-font {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace !important;
+}
+
+.nav-wrapper {
+    height: 68px !important;
+    line-height: 68px !important;
+}
+
+.sidenav-trigger i {
+    line-height: 68px !important;
+}
+
+.nav-bar {
+    background-color: $background-primary;
+    overflow: hidden;
+    box-shadow: 0px -63px 12px 70px rgb(9, 11, 29);
+}
+
+.nav-bar-text {
+    float: right;
+    display: block;
+    color: $text-primary;
+    font-size: 14px;
+    padding: 0px 10px 0px;
+    
+    &:hover {
+        background-color: inherit;
+        color: $text-important;
+    }
+}
+
+.nav-bar-no {
+    float: left;
+    display: block;
+    cursor: default;
+    color: $text-important;
+    font-size: 14px;
+    padding-right: 17px;
+}
+
+.center-text {
+    margin: auto;
+}
+
+.btn-small {
+    text-transform: none;
+    background-color: inherit;
+    border: 1px solid;
+    border-color: $text-important;
+
+    &:hover {
+        background-color: inherit;
+        color: $text-important;
+    }
+}
+
+.sidenav-trigger {
+    float: right !important;
+}
+
+.logo-img {
+    height: 48px;
+    width: 39.2px;
+    margin: 0px 15px 0px;
+}
+
+.hello {
+    color: $text-important;
+    font-size: 20px;
+}
+
+.name {
+    color: $text-primary;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.passion {
+    color: $text-secondary;
+    font-size: 40px;
+    font-weight: bold;
 }

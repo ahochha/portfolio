@@ -4,10 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/main.css">
+
     <title>Austin's Portfolio</title>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <nav style="line-height: 68px; height: 68px">
+        <div class="nav-wrapper nav-bar styled-font">
+            <a href="#!" class="brand-logo valign-wrapper"><img src="../assets/final_logo.png" class="logo-img" style="vertical-align: middle"></a>
+            <a href="#" data-target="navbar" class="sidenav-trigger valign-wrapper nav-bar-no"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="nav-bar-no">
+                        01.<a class="nav-bar-text" href="#">about</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-bar-no">
+                        02.<a class="nav-bar-text" href="#">education</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-bar-no">
+                        03.<a class="nav-bar-text" href="#">projects</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-bar-no">
+                        04.<a class="nav-bar-text" href="#">contact</a>
+                    </div>
+                </li>
+                <li class="valign-wrapper">
+                    <div>
+                        <a style="margin-left:0px" class="waves-effect waves-yellow btn-small">resume</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="navbar">
+        <li><a href="#">about</a></li>
+        <li><a href="#">education</a></li>
+        <li><a href="#">projects</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+
+    <div id="intro">
+        <div class="valign-wrapper" style="height: 100%">
+            <div class="center-text">
+                <div style="margin: 0px 15px 0px">
+                    <div class="hello styled-font">
+                        Hi, my name is
+                    </div>
+                    <div class="name">
+                        Austin Hochhalter.
+                    </div>
+                    <div class="passion">
+                        I'm a Software Developer.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/bin/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {edge: 'right'});
+        });
+
+        function resize() {
+            let height = window.innerHeight - 68;
+            document.getElementById("intro").style.height = height + "px";
+        }
+
+        window.onload = function() {
+            resize();
+        }
+
+        window.onresize = function() {
+            resize();
+        }
+    </script>
 </body>
 </html>
