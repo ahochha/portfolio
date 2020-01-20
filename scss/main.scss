@@ -6,15 +6,34 @@ $text-secondary: #899FC1; //rgb(137,159,193)
 //$text-secondary: #D03137; //rgb(208,49,55)
 //$background-secondary: #0c1a36; //rgb(11,24,51)
 
-
 body {
-    margin: 0px;
     background: $background-primary;
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
+@media screen and (min-width: 601px) {
+    .main-content {
+        padding-top: 68px;
+        margin-left: 15%;
+        margin-right:15%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-content {
+        padding-top: 68px;
+        margin: 0px;
+    }
+}
+
 .styled-font {
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace !important;
+}
+
+.nav-format {
+    line-height: 68px;
+    height: 68px;
+    position: fixed;
 }
 
 .nav-wrapper {
@@ -52,6 +71,16 @@ body {
     color: $text-important;
     font-size: 14px;
     padding-right: 17px;
+}
+
+.landing {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.page-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .center-text {
@@ -95,4 +124,19 @@ body {
     color: $text-secondary;
     font-size: 40px;
     font-weight: bold;
+}
+
+.section-header {
+    color: $text-important;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.standard-font {
+    color: $text-secondary;
+    font-size: 14px;
+}
+
+.text-margin {
+    margin: 0px 15px 0px
 }

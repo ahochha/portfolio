@@ -13,19 +13,19 @@
     <title>Austin's Portfolio</title>
 </head>
 <body>
-    <nav style="line-height: 68px; height: 68px">
+    <nav class="nav-format">
         <div class="nav-wrapper nav-bar styled-font">
-            <a href="#!" class="brand-logo valign-wrapper"><img src="../assets/final_logo.png" class="logo-img" style="vertical-align: middle"></a>
+            <a href="#landing-page" class="brand-logo valign-wrapper"><img src="../assets/final_logo.png" class="logo-img" style="vertical-align: middle"></a>
             <a href="#" data-target="navbar" class="sidenav-trigger valign-wrapper nav-bar-no"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li>
                     <div class="nav-bar-no">
-                        01.<a class="nav-bar-text" href="#">about</a>
+                        01.<a class="nav-bar-text" href="#about">about me</a>
                     </div>
                 </li>
                 <li>
                     <div class="nav-bar-no">
-                        02.<a class="nav-bar-text" href="#">education</a>
+                        02.<a class="nav-bar-text" href="#education">education</a>
                     </div>
                 </li>
                 <li>
@@ -48,27 +48,64 @@
     </nav>
 
     <ul class="sidenav" id="navbar">
-        <li><a href="#">about</a></li>
+        <li><a href="#">about me</a></li>
         <li><a href="#">education</a></li>
         <li><a href="#">projects</a></li>
         <li><a href="#">contact</a></li>
     </ul>
 
-    <div id="intro">
-        <div class="valign-wrapper" style="height: 100%">
-            <div class="center-text">
-                <div style="margin: 0px 15px 0px">
-                    <div class="hello styled-font">
-                        Hi, my name is
-                    </div>
-                    <div class="name">
-                        Austin Hochhalter.
-                    </div>
-                    <div class="passion">
-                        I'm a Software Developer.
+    <div class="main-content">
+        <div class="landing" id="landing-page">
+            <div class="valign-wrapper" style="height: 100%">
+                <div class="center-text">
+                    <div class="text-margin">
+                        <div class="hello styled-font">
+                            Hi, my name is
+                        </div>
+                        <div class="name">
+                            Austin Hochhalter.
+                        </div>
+                        <div class="passion">
+                            I'm a Software Developer.
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <br/>
+        <br/>
+        <div id="about">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="section-header text-margin">
+                about me
+            </div>
+            <br/>
+            <div class="standard-font styled-font text-margin">
+                <p>                
+                    Hello! I'm Austin, a software developer from Sioux Falls, SD. I'm currently writing production level 
+                    web applications at Daktronics, while also being a full time student at South Dakota State University. 
+                </p>
+                <p>
+                    My passion for developing software spawned from my love of computers and video games as a child. Today, I feed my passion
+                    by learning new programming techniques and consistently perfecting my existing knowledge of all things software.
+                </p>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div id="education">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/> 
+            <div class="section-header text-margin">
+                education
+            </div>           
         </div>
     </div>
 
@@ -81,7 +118,7 @@
 
         function resize() {
             let height = window.innerHeight - 68;
-            document.getElementById("intro").style.height = height + "px";
+            document.getElementById("landing-page").style.height = height + "px";
         }
 
         window.onload = function() {
