@@ -26,8 +26,18 @@ body {
     }
 }
 
+.standard-list {
+    list-style-type: disc !important;
+}
+
 .styled-font {
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace !important;
+}
+
+.sub-header {
+    font-weight:bolder; 
+    font-size:18px;
+    color: $text-primary;
 }
 
 .nav-format {
@@ -51,6 +61,10 @@ body {
     box-shadow: 0px -63px 12px 70px rgb(9, 11, 29);
 }
 
+.sidenav-color {
+    background-color: $background-primary;
+}
+
 .nav-bar-text {
     float: right;
     display: block;
@@ -64,6 +78,17 @@ body {
     }
 }
 
+.side-nav-bar-text {
+    padding-left: 10px;
+    color: $text-primary;
+    font-size: 16px;
+
+    &:hover {
+        background-color: inherit;
+        color: $text-important;
+    }
+}
+
 .nav-bar-no {
     float: left;
     display: block;
@@ -71,6 +96,13 @@ body {
     color: $text-important;
     font-size: 14px;
     padding-right: 17px;
+}
+
+.side-nav-bar-no {
+    cursor: default;
+    padding-left:30px;
+    color: $text-important;
+    font-size: 16px;
 }
 
 .landing {
@@ -139,4 +171,49 @@ body {
 
 .text-margin {
     margin: 0px 15px 0px
+}
+
+.position-list {
+    display:table;
+    margin: 0 auto;
+}
+
+.highlighted-text {
+    font-weight:bolder; 
+    font-size:14px;
+    color: $text-primary;
+}
+
+.course-list {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+@media (max-width: 992px) {
+    .course-list {
+        width: 350px;
+    }
+
+    .small-course-header {
+        text-align: left !important;
+    }
+
+    .small-course-list {
+        display: block;
+        margin: 0;
+        padding-left: 18px !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .small-header {
+        text-align: left !important;
+    }
+
+    .small-list {
+        display: block;
+        margin: 0;
+        padding-left: 18px !important;
+    }
 }
