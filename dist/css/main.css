@@ -139,6 +139,20 @@ body {
   font-size: 14px;
   color: #FFFFFF; }
 
+.footer-text {
+  font-size: 10px;
+  color: #FFFFFF; }
+
+.footer-icon {
+  color: #d2a02a !important;
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer; }
+
+.small-contact {
+  margin-left: 140px;
+  margin-right: 140px; }
+
 .course-list {
   padding-right: 2rem;
   padding-left: 2rem; }
@@ -152,7 +166,10 @@ body {
     display: block;
     margin: 0;
     padding-left: 18px !important;
-    width: 100%; } }
+    width: 100%; }
+  .small-contact {
+    margin-left: 15px;
+    margin-right: 15px; } }
 
 @media (max-width: 600px) {
   .small-header {
@@ -160,4 +177,6 @@ body {
   .small-list {
     display: block;
     margin: 0;
-    padding-left: 18px !important; } }
+    padding-left: 18px !important; }
+  .small-name {
+    font-size: 50px !important; } }

@@ -3,9 +3,6 @@ $text-important: #d2a02a; //rgb(210, 160, 42)
 $text-primary: #FFFFFF; //rgb(194,231,218)
 $text-secondary: #899FC1; //rgb(137,159,193)
 
-//$text-secondary: #D03137; //rgb(208,49,55)
-//$background-secondary: #0c1a36; //rgb(11,24,51)
-
 body {
     background: $background-primary;
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
@@ -184,6 +181,23 @@ body {
     color: $text-primary;
 }
 
+.footer-text {
+    font-size:10px;
+    color: $text-primary;
+}
+
+.footer-icon {
+    color: $text-important !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.small-contact {
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
 .course-list {
     padding-right: 2rem;
     padding-left: 2rem;
@@ -204,6 +218,11 @@ body {
         padding-left: 18px !important;
         width: 100%;
     }
+
+    .small-contact {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -215,5 +234,9 @@ body {
         display: block;
         margin: 0;
         padding-left: 18px !important;
+    }
+
+    .small-name {
+        font-size: 50px !important;
     }
 }

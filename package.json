@@ -9,6 +9,8 @@
   "author": "Austin Hochhalter",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.0"
   }
 }
